@@ -51,7 +51,7 @@ header {
             }
         }
 
-        .imagenes_menu {
+    .imagenes_menu {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             justify-content: center;
@@ -63,69 +63,10 @@ header {
                 width: 300px;
                 height: auto;
             }
-        }
-
-        .spices_taste {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        gap: 100px;
-
-        padding-bottom: 30px;
-
-        & img {
-            width: 300px;
-            height: 250px;
-
-            position: relative;
-        }
-
-        & .fecha {
-            position: absolute;
-            top: 690px;
-            left: 726px;
-
-            width: 25px;
-
-            padding: 25px;
-
-            background-color: white;
-
-            text-align: center;
-        }
-
-        & .contenedor_info {
-            & div {
-                width: 500px;
-
-                padding-bottom: 35px;
-            }
-
-            & a {
-                text-decoration: none;
-
-                border: 1px solid var(--color-primario);
-                border-radius: 20px;
-
-                padding: 10px;
-                padding-left: 25px;
-                padding-right: 25px;
-
-                background-color: white;
-                color: black;
-            }
-
-            & a:hover {
-                background-color: var(--color-primario);
-                color: white;
-            }
-        }
     }
 }
 
 /* Seccion Full of Spices & Taste */
-
 .spices_taste {
     display: flex;
     align-items: center;
@@ -138,21 +79,16 @@ header {
     & img {
         width: 300px;
         height: 250px;
-
         position: relative;
     }
 
-    & .fecha {
+    & .fechas {
         position: absolute;
-        top: 690px;
-        left: 726px;
-
+        top: 5px;
+        right: -85px;
         width: 25px;
-
         padding: 25px;
-
         background-color: white;
-
         text-align: center;
     }
 
@@ -184,8 +120,7 @@ header {
     }
 }
 
-/* "Full of Spices & Taste" */
-
+/* Seccion Spices & Taste */
 .spices_taste {
     display: flex;
     align-items: center;
@@ -195,11 +130,10 @@ header {
 
     & .imagen_y_fecha {
         position: relative;
-        width: fit-content;
     }
 
     & img {
-        width: 400px;
+        width: 350px;
         height: 250px;
         display: block;
         margin-right: -90px;
@@ -226,7 +160,7 @@ header {
         & a {
             text-decoration: none;
             border: 1px solid var(--color-primario);
-            border-radius: 20px;
+            border-radius: 30px;
             padding: 10px;
             padding-left: 25px;
             padding-right: 25px;
@@ -242,18 +176,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-
     gap: 100px;
-
     padding-bottom: 30px;
 
     & .imagen_y_fecha {
-        position: relative;
-        width: fit-content;
+        position: relative;    
     }
 
     & img {
-        width: 400px;
+        width: 350px;
         height: 250px;
         display: block;
         margin-left: -90px;
@@ -278,7 +209,7 @@ header {
         & a {
             text-decoration: none;
             border: 1px solid var(--color-secundario);
-            border-radius: 20px;
+            border-radius: 30px;
             padding: 10px;
             padding-left: 25px;
             padding-right: 25px;
