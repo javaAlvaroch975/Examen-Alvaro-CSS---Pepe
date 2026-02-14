@@ -124,7 +124,7 @@ header {
     }
 }
 
-/* "Full of Spices & Taste" */
+/* Seccion Full of Spices & Taste */
 
 .spices_taste {
     display: flex;
@@ -230,13 +230,13 @@ header {
             padding: 10px;
             padding-left: 25px;
             padding-right: 25px;
-            background-color: rgb(147, 212, 49);
+            background-color: greenyellow;
             color: white;
         }
     }
 }
 
-/* "Midnight Deals" */
+/* Seccion Midnight Deals */
 
 .midnight_deals {
     display: flex;
