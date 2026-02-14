@@ -90,6 +90,7 @@ header {
         padding: 25px;
         background-color: white;
         text-align: center;
+           font-size: 0.85rem;
     }
 
     & .informacion {
@@ -147,6 +148,7 @@ header {
         padding: 25px;
         background-color: white;
         text-align: center;
+           font-size: 0.85rem;
     }
 
     & .cotenedor_info {
@@ -198,6 +200,7 @@ header {
         padding: 25px;
         background-color: white;
         text-align: center;
+           font-size: 0.85rem;
     }
 
     & .cotenedor_info {
@@ -252,6 +255,7 @@ header {
             right: 5px;
             top: 5px;
             padding: 15px;
+                font-size: 0.8rem;
         }
     }
 }
@@ -287,6 +291,7 @@ header {
     .spices_taste .fechas, .midnight_deals .fechas {
         right: 0;
         padding: 10px;
+            font-size: 0.75rem;
     }
 }
 
