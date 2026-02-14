@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0;
+}
+
+:root {
+    font-family: 'Ubuntu';
+    
+    --color-primario: green;
+    --color-secundario: red;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+
+        & div {
+            width: 525px;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        & nav {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+                padding: 0;
+
+                & li {
+                    list-style: none;
+
+                    & a {
+                        text-decoration: none;
+                        color: black;
+                        display: block;
+                        border: 1px solid black;
+                        padding: 10px 20px;
+
+                        &:hover {
+                            background-color: greenyellow;
+                            border: 1px solid gray;
+                        }
+                    }
+                }
+            }
+        }
+
+        .imagenes_menu {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            gap: 2px;
+            padding-bottom: 30px;
+            list-style: none;
+
+            & img {
+                width: 300px;
+                height: auto;
+            }
+        }
+
+        .spices_taste {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 100px;
+
+        padding-bottom: 30px;
+
+        & img {
+            width: 300px;
+            height: 250px;
+
+            position: relative;
+        }
+
+        & .fecha {
+            position: absolute;
+            top: 690px;
+            left: 726px;
+
+            width: 25px;
+
+            padding: 25px;
+
+            background-color: white;
+
+            text-align: center;
+        }
+
+        & .contenedor_info {
+            & div {
+                width: 500px;
+
+                padding-bottom: 35px;
+            }
+
+            & a {
+                text-decoration: none;
+
+                border: 1px solid var(--color-primario);
+                border-radius: 20px;
+
+                padding: 10px;
+                padding-left: 25px;
+                padding-right: 25px;
+
+                background-color: white;
+                color: black;
+            }
+
+            & a:hover {
+                background-color: var(--color-primario);
+                color: white;
+            }
+        }
+    }
+}
+
+/* "Full of Spices & Taste" */
+
+.spices_taste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+
+    padding-bottom: 30px;
+
+    & img {
+        width: 300px;
+        height: 250px;
+
+        position: relative;
+    }
+
+    & .fecha {
+        position: absolute;
+        top: 690px;
+        left: 726px;
+
+        width: 25px;
+
+        padding: 25px;
+
+        background-color: white;
+
+        text-align: center;
+    }
+
+    & .informacion {
+        & div {
+            width: 500px;
+
+            padding-bottom: 35px;
+        }
+
+        & a {
+            text-decoration: none;
+
+            border: 1px solid var(--color-primario);
+            border-radius: 20px;
+
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+
+            background-color: white;
+            color: black;
+        }
+
+        & a:hover {
+            background-color: var(--color-primario);
+            color: white;
+        }
+    }
+}
+
+/* "Full of Spices & Taste" */
+
+.spices_taste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 30px;
+
+    & .imagen_y_fecha {
+        position: relative;
+        width: fit-content;
+    }
+
+    & img {
+        width: 400px;
+        height: 250px;
+        display: block;
+        margin-right: -90px;
+    }
+
+    & .fechas {
+        position: absolute;
+        top: 5px;
+        right: -85px;
+        width: 25px;
+        padding: 25px;
+        background-color: white;
+        text-align: center;
+    }
+
+    & .cotenedor_info {
+        text-align: right;
+
+        & div {
+            width: 500px;
+            padding-bottom: 35px;
+        }
+
+        & a {
+            text-decoration: none;
+            border: 1px solid var(--color-primario);
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: rgb(147, 212, 49);
+            color: white;
+        }
+    }
+}
+
+/* "Midnight Deals" */
+
+.midnight_deals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+
+    padding-bottom: 30px;
+
+    & .imagen_y_fecha {
+        position: relative;
+        width: fit-content;
+    }
+
+    & img {
+        width: 400px;
+        height: 250px;
+        display: block;
+        margin-left: -90px;
+    }
+
+    & .fechas {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 25px;
+        padding: 25px;
+        background-color: white;
+        text-align: center;
+    }
+
+    & .cotenedor_info {
+        & div {
+            width: 500px;
+            padding-bottom: 35px;
+        }
+
+        & a {
+            text-decoration: none;
+            border: 1px solid var(--color-secundario);
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: crimson;
+            color: white;
+        }
+    }
+}
