@@ -219,117 +219,74 @@ header {
     }
 }
 
+/* RESPONSIVE */
 /* Tablet */
-@media (max-width: 1000px) and (min-width: 701px) {
+@media (max-width: 1000px) {
     header {
-        max-width: 95vw;
-    }
-
-    header .imagenes_menu {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    .spices_taste, .midnight_deals {
-        flex-direction: row;
-        gap: 40px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .spices_taste .cotenedor_info {
-        text-align: right;
-    }
-
-    .midnight_deals .cotenedor_info {
-        text-align: left;
-    }
-
-    .spices_taste img,
-    .midnight_deals img {
-        width: 100%;
-        max-width: 320px;
-        height: auto;
-        margin: 0;
-        box-sizing: border-box;
-    }
-
-    .spices_taste, .midnight_deals {
-        padding-left: 16px;
-        padding-right: 16px;
-        box-sizing: border-box;
-    }
-
-    .spices_taste .fechas {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        width: 18px;
-        padding: 10px 6px;
-        font-size: 0.60em;
-        background-color: white;
-        text-align: center;
-    }
-    .midnight_deals .fechas {
-        width: 18px;
-        padding: 10px 6px;
-        font-size: 0.60em;
-    }
-    
-    .spices_taste .cotenedor_info,
-    .midnight_deals .cotenedor_info {
-        text-align: center;
-    }
-}
-
-/* Móvil: menos de 700px */
-@media (max-width: 700px) {
-    header {
-        max-width: 100vw;
-        padding: 0 5px;
-    }
-    header .imagenes_menu {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    header .imagenes_menu img {
-        width: 100vw;
-        max-width: 98vw;
-        min-width: 0;
-        height: auto;
-    }
-    header nav ul {
-        flex-direction: row;
-        gap: 8px;
-        justify-content: center;
-        flex-wrap: wrap;
+        max-width: 100%;
+        & div {
+            width: 90%;
+        }
+        .imagenes_menu {
+            grid-template-columns: repeat(2, 1fr);
+            & img {
+                width: 45vw;
+                min-width: 180px;
+            }
+        }
     }
     .spices_taste, .midnight_deals {
         flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        padding-bottom: 20px;
-    }
-    .spices_taste img,
-    .midnight_deals img {
-        width: 95vw;
-        max-width: 320px;
-        height: auto;
-        margin: 0;
-    }
-    .spices_taste .cotenedor_info,
-    .midnight_deals .cotenedor_info {
-        text-align: center;
-    }
-    .spices_taste .informacion {
-        text-align: center;
-    }
-    .spices_taste .fechas,
-    .midnight_deals .fechas {
-        position: static;
-        width: auto;
-        padding: 10px;
-        margin: 0 auto 10px auto;
-        display: block;
+        gap: 40px;
+        & img {
+            width: 60vw;
+            min-width: 180px;
+            margin: 0;
+        }
+        & .cotenedor_info div, & .informacion div {
+            width: 90vw;
+            min-width: 180px;
+        }
+        /* Ajuste de la posición de la fecha para tablet */
+        & .fechas {
+            right: 5px;
+            top: 5px;
+            padding: 15px;
+        }
     }
 }
+
+/* Movil */
+@media (max-width: 700px) {
+    header {
+        & nav ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+        .imagenes_menu {
+            grid-template-columns: 1fr;
+            & img {
+                width: 90vw;
+                min-width: 120px;
+            }
+        }
+    }
+    .spices_taste, .midnight_deals {
+        gap: 20px;
+        & img {
+            width: 90vw;
+            min-width: 120px;
+        }
+        & .cotenedor_info div, & .informacion div {
+            width: 95vw;
+            min-width: 120px;
+        }
+    }
+    .spices_taste .fechas, .midnight_deals .fechas {
+        right: 0;
+        padding: 10px;
+    }
+}
+
