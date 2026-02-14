@@ -219,37 +219,63 @@ header {
     }
 }
 
-/* ===================== RESPONSIVE ===================== */
-/* Tablet: entre 1000px y 700px */
+/* Tablet */
 @media (max-width: 1000px) and (min-width: 701px) {
     header {
         max-width: 95vw;
     }
+
     header .imagenes_menu {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
+
     .spices_taste, .midnight_deals {
-        flex-direction: column;
+        flex-direction: row;
         gap: 40px;
         align-items: center;
+        justify-content: center;
     }
+
+    .spices_taste .cotenedor_info {
+        text-align: right;
+    }
+
+    .midnight_deals .cotenedor_info {
+        text-align: left;
+    }
+
     .spices_taste img,
     .midnight_deals img {
-        width: 90vw;
-        max-width: 350px;
+        width: 100%;
+        max-width: 320px;
         height: auto;
         margin: 0;
+        box-sizing: border-box;
     }
+
+    .spices_taste, .midnight_deals {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
     .spices_taste .fechas {
         position: absolute;
         top: 5px;
         right: 5px;
-        width: 25px;
-        padding: 25px;
+        width: 18px;
+        padding: 10px 6px;
+        font-size: 0.60em;
         background-color: white;
         text-align: center;
     }
+    .midnight_deals .fechas {
+        width: 18px;
+        padding: 10px 6px;
+        font-size: 0.60em;
+    }
+    
     .spices_taste .cotenedor_info,
     .midnight_deals .cotenedor_info {
         text-align: center;
