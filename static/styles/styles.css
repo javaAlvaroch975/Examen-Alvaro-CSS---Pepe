@@ -180,18 +180,18 @@ section.menu {
     }
 
     & .fechas {
-        position: absolute;
-        top: 5px;
-        left: 5px; 
-        width: 65px; 
-        padding: 25px 5px; 
-        background-color: white;
-        text-align: center;
-        font-size: 0.85rem;
-        word-spacing: 100vw; 
-        line-height: 1.4;
-        color: gray;
-        font-weight: bold;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 65px; 
+      padding: 25px 5px; 
+      background-color: white;
+      text-align: center;
+      font-size: 0.85rem;
+      word-spacing: 100vw; 
+      line-height: 1.4;
+      color: gray;
+      font-weight: bold;
     }
 
     & .cotenedor_info {
